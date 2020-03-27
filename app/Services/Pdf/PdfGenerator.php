@@ -138,6 +138,7 @@ class PdfGenerator
     /**
      * Build the table with view "Week"
      * @fixme сделать что то с бордерами, слишком толстые
+     * @fixme Undefined index 03:00:00
      * @param array $days
      * @param string $studioTitle
      * @param string $startDate
