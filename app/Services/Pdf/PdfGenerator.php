@@ -201,8 +201,9 @@ class PdfGenerator
                 Destination::STRING_RETURN);
         }
 
-        $mpdf->Output(//            Str::slug($studioTitle) . '_' . $startDate . '_' . $endDate . '.pdf',
-//            Destination::DOWNLOAD
+        $mpdf->Output(
+            // Str::slug($studioTitle) . '_' . $startDate . '_' . $endDate . '.pdf',
+            // Destination::DOWNLOAD
         );
     }
 }
