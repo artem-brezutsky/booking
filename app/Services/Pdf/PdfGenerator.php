@@ -123,14 +123,10 @@ class PdfGenerator
         $mpdf->WriteHTML($table);
 
         if ($mailing) {
-            return $mpdf->Output(
-                Str::slug($studioTitle) . '_' . $date . '.pdf',
-                Destination::STRING_RETURN
-            );
+            return $mpdf->Output(Str::slug($studioTitle) . '_' . $date . '.pdf', Destination::STRING_RETURN);
         }
 
-        $mpdf->Output(
-//            Str::slug($studioTitle) . '_' . $date . '.pdf',
+        $mpdf->Output(//            Str::slug($studioTitle) . '_' . $date . '.pdf',
 //            Destination::DOWNLOAD
         );
     }
@@ -201,14 +197,11 @@ class PdfGenerator
         $mpdf->WriteHTML($table);
 
         if ($mailing) {
-            return $mpdf->Output(
-                Str::slug($studioTitle) . '_' . $startDate . '_' . $endDate . '.pdf',
-                Destination::STRING_RETURN
-            );
+            return $mpdf->Output(Str::slug($studioTitle) . '_' . $startDate . '_' . $endDate . '.pdf',
+                Destination::STRING_RETURN);
         }
 
-        $mpdf->Output(
-//            Str::slug($studioTitle) . '_' . $startDate . '_' . $endDate . '.pdf',
+        $mpdf->Output(//            Str::slug($studioTitle) . '_' . $startDate . '_' . $endDate . '.pdf',
 //            Destination::DOWNLOAD
         );
     }
