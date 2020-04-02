@@ -203,7 +203,6 @@ class PdfGenerator
 
         $mpdf->Output(
             // Str::slug($studioTitle) . '_' . $startDate . '_' . $endDate . '.pdf',
-
             // Destination::DOWNLOAD
         );
     }
